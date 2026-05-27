@@ -10,7 +10,7 @@ User=tlsrpt
 Group=tlsrpt
 StateDirectory=tlsrpt-reporter
 StateDirectoryMode=0750
-ExecStart=/opt/tlsrpt-reporter/venv/bin/tlsrpt-reportd --config-file /etc/tlsrpt-reporter/tlsrpt.cfg
+ExecStart=/opt/tlsrpt-reporter/venv/bin/tlsrpt-reportd --config_file /etc/tlsrpt-reporter/tlsrpt.cfg
 Restart=on-failure
 RestartSec=5
 

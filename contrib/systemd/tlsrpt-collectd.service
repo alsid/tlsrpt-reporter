@@ -11,7 +11,7 @@ RuntimeDirectory=tlsrpt-reporter
 RuntimeDirectoryMode=0750
 StateDirectory=tlsrpt-reporter
 StateDirectoryMode=0750
-ExecStart=/opt/tlsrpt-reporter/venv/bin/tlsrpt-collectd --config-file /etc/tlsrpt-reporter/tlsrpt.cfg
+ExecStart=/opt/tlsrpt-reporter/venv/bin/tlsrpt-collectd --config_file /etc/tlsrpt-reporter/tlsrpt.cfg
 Restart=on-failure
 RestartSec=5
 
