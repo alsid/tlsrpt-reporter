@@ -1,0 +1,19 @@
+[Unit]
+Description=TLSRPT Collect Daemon
+Documentation=man:tlsrpt-collectd(1)
+After=network.target
+
+[Service]
+Type=simple
+User=tlsrpt
+Group=tlsrpt
+RuntimeDirectory=tlsrpt-reporter
+RuntimeDirectoryMode=0750
+StateDirectory=tlsrpt-reporter
+StateDirectoryMode=0750
+ExecStart=/opt/tlsrpt-reporter/venv/bin/tlsrpt-collectd --config-file /etc/tlsrpt-reporter/tlsrpt.cfg
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
