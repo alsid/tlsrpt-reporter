@@ -171,9 +171,9 @@ class Duration:
     Time duration and rate measurement class
     """
     def __init__(self):
-        self.start()
-        self.count = 0
         self.begin = None
+        self.count = 0
+        self.start()
 
     def start(self):
         self.begin = datetime.datetime.now(datetime.timezone.utc)
